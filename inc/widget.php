@@ -24,7 +24,7 @@ class ncnaw_advertisement_widget extends WP_Widget {
    function __construct() {
       $widget_ops = array( 'classname' => 'ncnaw_widget_advertisement', 'description' => __( 'Thêm quảng cáo của bạn ở đây', 'namncn') );
       $control_ops = array( 'width' => 200, 'height' =>250 );
-      parent::__construct( false,$name= __( 'NCN: Advertisement', 'namncn' ),$widget_ops);
+      parent::__construct( false,$name= __( 'NCN: Quảng cáo', 'namncn' ),$widget_ops);
    }
 
    function form( $instance ) {
@@ -62,7 +62,7 @@ class ncnaw_advertisement_widget extends WP_Widget {
       </p>
       <p>
          <small>
-            <?php print 'Để ủng hộ tác giả, soạn tin: <br /> TT < cach > NAMNCN < cach > ADS gửi 8375'; // WPCS: XSS OK. ?>
+            <?php print 'Ủng hộ tác giả plugin này, soạn tin: <br /> TT < cach > NAW < cach > NCN gửi 8585 (5.000đ).'; // WPCS: XSS OK. ?>
          </small>
       </p>
    <?php }

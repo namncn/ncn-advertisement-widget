@@ -14,7 +14,7 @@ Text Domain: namncn
 define( 'NCNAW_DIR_PATH', plugin_dir_path( __FILE__ ) );
 define( 'NCNAW_DIR_URL', plugin_dir_url( __FILE__ ) );
 
-load_theme_textdomain( 'namncn', NCNAW_DIR_PATH . '/languages' );
+load_plugin_textdomain( 'namncn', false, NCNAW_DIR_PATH . '/languages' );
 
 
 /**
