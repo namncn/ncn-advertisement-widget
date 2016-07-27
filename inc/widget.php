@@ -60,11 +60,6 @@ class ncnaw_advertisement_widget extends WP_Widget {
 
          <input type="button" class="button button-primary custom_media_button" id="custom_media_button" name="<?php echo esc_attr( $this->get_field_name( $image_url ) ); ?>" value="<?php esc_attr_e( 'Upload ảnh', 'namncn' ); ?>" style="margin-top:5px;" onclick="imageWidget.uploader( '<?php echo esc_js( $this->get_field_id( $image_url ) ); ?>' ); return false;"/>
       </p>
-      <p>
-         <small>
-            <?php print 'Ủng hộ tác giả plugin này, soạn tin: <br /> TT < cach > NAW < cach > NCN gửi 8585 (5.000đ).'; // WPCS: XSS OK. ?>
-         </small>
-      </p>
    <?php }
    function update( $new_instance, $old_instance ) {
       $instance = $old_instance;
